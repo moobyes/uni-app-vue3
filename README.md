@@ -1,6 +1,32 @@
-# 西皮柚酒吧小程序
+# 西皮柚酒吧点餐
 
-## 简单的介绍
+## 项目介绍
 
-基于uni-app搭建。通过Hbuilder编辑器直接导入，然后找到 “运行” 菜单，选择运行到小程序模拟器；Hbulder编辑器的配置方法见：[Hbuilider开发小程序的配置](https://ask.dcloud.net.cn/article/35563)
-另外，这里可能更详细一点：[第三方的配置方法文章](https://www.jianshu.com/p/f817d2dc8ba5)
+基于uni-app + vue3 搭建。
+
+
+## 项目安装
+
+```
+npm install
+```
+
+### 开发
+
+运行下面命令：
+
+```
+npm run dev
+```
+
+打开微信开发者工具，从 dist > dev > mp-weixin 里导入项目
+
+后续在开发直接打开微信开发者工具的功能
+
+### 打包
+
+```
+npm run build
+```
+
+### 测试
