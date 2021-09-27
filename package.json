@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@dcloudio/uni-app-plus": "^2.0.0-alpha-32820210924001",
+    "@dcloudio/uni-cli-i18n": "0.0.1",
     "@dcloudio/uni-h5": "^2.0.0-alpha-32820210924001",
     "@dcloudio/uni-helper-json": "*",
     "@dcloudio/uni-i18n": "^2.0.0-alpha-32820210924001",
@@ -24,8 +25,11 @@
     "@dcloudio/uni-quickapp-webview": "^2.0.0-alpha-32820210924001",
     "@dcloudio/uni-stat": "^2.0.0-alpha-32820210924001",
     "@vue/shared": "^3.0.0",
+    "autoprefixer": "^10.3.6",
     "core-js": "^3.6.5",
     "flyio": "^0.6.2",
+    "postcss-comment": "^2.0.0",
+    "postcss-import": "^14.0.2",
     "regenerator-runtime": "^0.12.1",
     "uview-ui": "^1.8.4",
     "vue": "^3.0.0",
@@ -51,14 +55,15 @@
     "cross-env": "^7.0.2",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-webpack": "^0.13.1",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-vue": "^7.18.0",
     "husky": "^7.0.2",
     "jest": "^25.4.0",
     "lint-staged": "^11.1.2",
     "mini-types": "*",
-    "miniprogram-api-typings": "*",
-    "postcss-comment": "^2.0.0"
+    "miniprogram-api-typings": "*"
   },
   "browserslist": [
     "Android >= 4.4",

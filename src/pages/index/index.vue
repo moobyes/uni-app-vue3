@@ -9,37 +9,37 @@
 
 <script>
 import { ref, getCurrentInstance } from 'vue';
-import request from '../../utils/request'
+import * as request from '@/utils/request';
 
 export default {
   setup() {
-    const subTitle = ref('庆祝')
-    const { proxy } = getCurrentInstance()
+    const subTitle = ref('庆祝');
+    const { proxy, } = getCurrentInstance();
 
-    console.log('request :>> ', request, proxy);
+    console.log('request :>> ', proxy);
 
     const testChangeTxt = () => {
       subTitle.value = '法律';
 
-      // const data = {
-      //   service: 'dish_menus',
-      //   shopId: '870071999'
-      // }
-      // request({
-      //   method: 'POST',
-      //   data
-      // }).then((res) => {
-      //   console.log('res :>> ', res);
-      // }).catch((err) => {
-      //   console.log('err :>> ', err);
-      // })
+      const data = {
+        service: 'dish_menus',
+        shopId: '870071999',
+      };
+
+      request.post({
+        data,
+      }).then((res) => {
+        console.log('res :>> ', res);
+      }).catch((err) => {
+        console.log('err :>> ', err);
+      });
     };
     return {
       title: subTitle,
       subTitle,
-      testChangeTxt
+      testChangeTxt,
     };
-  }
+  },
 };
 </script>
 

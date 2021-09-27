@@ -3,14 +3,74 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "首页"
+			}
+		},
+    {
+			"path": "pages/menu/index",
+			"style": {
+				"navigationBarTitleText": "menu"
+			}
+		},
+    {
+			"path": "pages/myorder/index",
+			"style": {
+				"navigationBarTitleText": "myorder"
+			}
+		},
+    {
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "mine"
 			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "首页",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
-	}
+	},
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#333",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/image/index.png",
+        "selectedIconPath": "static/image/index-active.png"
+      },
+      {
+        "pagePath": "pages/menu/index",
+        "text": "点单",
+        "iconPath": "static/image/car.png",
+        "selectedIconPath": "static/image/car-active.png"
+      },
+      {
+        "pagePath": "pages/myorder/index",
+        "text": "订单",
+        "iconPath": "static/image/order.png",
+        "selectedIconPath": "static/image/order-active.png"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "我的",
+        "iconPath": "static/image/me.png",
+        "selectedIconPath": "static/image/me-active.png"
+      }
+    ]
+  },
+  "condition": {
+    //模式配置，仅开发期间生效
+    "current": 0, //当前激活的模式(list 的索引项)
+    "list": [
+      {
+        "name": "", //模式名称
+        "path": "", //启动页面，必选
+        "query": "" //启动参数，在页面的onLoad函数里面得到
+      }
+    ]
+  }
 }

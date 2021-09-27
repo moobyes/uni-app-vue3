@@ -1,8 +1,8 @@
 import {
   createApp
-} from 'vue'
-import App from './App.vue'
+} from 'vue';
+import App from './App.vue';
 
 // app.config.globalProperties.$axios = axios
 
-createApp(App).mount()
+createApp(App).mount();
