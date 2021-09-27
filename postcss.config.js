@@ -18,6 +18,7 @@ module.exports = {
     require('autoprefixer')({
       remove: process.env.UNI_PLATFORM !== 'h5',
     }),
+    // eslint-disable-next-line import/no-extraneous-dependencies
     require('@dcloudio/vue-cli-plugin-uni/packages/postcss')
   ],
 };

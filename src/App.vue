@@ -8,10 +8,10 @@ export default {
   },
   onHide() {
     console.log('App Hide');
-  }
+  },
 };
 </script>
 
-<style>
+<style lang="scss">
     /*每个页面公共css */
 </style>
