@@ -1,4 +1,11 @@
+###
+ # @Description: 
+ # @Author: Moobye
+ # @Date: 2021-09-28 10:01:33
+ # @LastEditTime: 2021-09-28 10:24:41
+ # @LastEditors: Moobye
+### 
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npm test
+npx --no-install lint-staged "$1"

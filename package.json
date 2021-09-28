@@ -65,11 +65,17 @@
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-vue": "^7.18.0",
     "husky": "^7.0.0",
+    "jest": "^25.4.0",
     "lint-staged": "^11.1.2",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
-    "prettier": "^2.4.1",
-    "jest": "^25.4.0"
+    "prettier": "^2.4.1"
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "prettier --config ./.prettierrc --write",
+      "git add"
+    ]
   },
   "browserslist": [
     "Android >= 4.4",
