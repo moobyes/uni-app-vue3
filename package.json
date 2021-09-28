@@ -5,7 +5,8 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production UNI_PLATFORM=mp-weixin vue-cli-service uni-build",
     "dev": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
-    "test": "cross-env UNI_PLATFORM=mp-weixin jest -i"
+    "test:wp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@dcloudio/uni-app-plus": "^2.0.0-alpha-32820210924001",
@@ -28,7 +29,7 @@
     "autoprefixer": "8.0.0",
     "core-js": "^3.6.5",
     "flyio": "^0.6.2",
-    "node-sass": "^6.0.1",
+    "node-sass": "^4.14.1",
     "postcss-comment": "^2.0.0",
     "postcss-import": "8.0.1",
     "regenerator-runtime": "^0.12.1",
@@ -54,18 +55,21 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
     "babel-plugin-import": "^1.11.0",
+    "commitizen": "^4.2.4",
     "cross-env": "^7.0.2",
+    "cz-customizable-crs": "^1.0.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-import-resolver-webpack": "^0.13.1",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-vue": "^7.18.0",
-    "husky": "^7.0.2",
-    "jest": "^25.4.0",
+    "husky": "^7.0.0",
     "lint-staged": "^11.1.2",
     "mini-types": "*",
-    "miniprogram-api-typings": "*"
+    "miniprogram-api-typings": "*",
+    "prettier": "^2.4.1",
+    "jest": "^25.4.0"
   },
   "browserslist": [
     "Android >= 4.4",

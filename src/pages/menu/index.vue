@@ -1,5 +1,5 @@
 <template>
   <div>
-    menu
+    haha
   </div>
 </template>
