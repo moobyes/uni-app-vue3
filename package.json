@@ -6,6 +6,7 @@
     "build": "cross-env NODE_ENV=production UNI_PLATFORM=mp-weixin vue-cli-service uni-build",
     "dev": "cross-env NODE_ENV=development UNI_PLATFORM=mp-weixin vue-cli-service uni-build --watch",
     "test:wp-weixin": "cross-env UNI_PLATFORM=mp-weixin jest -i",
+    "lint:lint-staged": "lint-staged -c ./.husky/lintstagedrc.js",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -70,11 +71,6 @@
     "mini-types": "*",
     "miniprogram-api-typings": "*",
     "prettier": "^2.4.1"
-  },
-  "lint-staged": {
-    "src/**/*.{js,vue}": [
-      "prettier --config ./.prettierrc --write"
-    ]
   },
   "browserslist": [
     "Android >= 4.4",
