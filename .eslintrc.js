@@ -4,14 +4,11 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: [
-    'plugin:vue/essential',
-    'airbnb-base'
-  ],
+  extends: ['plugin:vue/essential', 'airbnb-base'],
   settings: {
     'import/resolver': {
       node: {
-        'extensions': ['.js', '.vue'],
+        extensions: ['.js', '.vue'],
       },
       alias: {
         map: [['@', './src']],
@@ -22,16 +19,14 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: [
-    'vue'
-  ],
+  plugins: ['vue'],
   rules: {
     'no-callback-literal': 0,
     'vue/no-parsing-error': [
       2,
       {
         'x-invalid-end-tag': false,
-      }
+      },
     ],
     // 定义对象的set存取器属性时，强制定义get
     'accessor-pairs': 2,
@@ -45,26 +40,20 @@ module.exports = {
       '1tbs',
       {
         allowSingleLine: true,
-      }
+      },
     ],
     // 双峰驼命名格式
     camelcase: 2,
     // 数组和对象键值对最后一个逗号， never参数：不能带末尾的逗号, always参数：必须带末尾的逗号，
     // always-multiline：多行模式必须带逗号，单行模式不能带逗号
-    'comma-dangle': ['error', {
-      'arrays': 'never',
-      'objects': 'always',
-      'imports': 'never',
-      'exports': 'never',
-      'functions': 'never',
-    }],
+    'comma-dangle': [2, 'always-multiline'],
     // 控制逗号前后的空格
     'comma-spacing': [
       2,
       {
         before: false,
         after: true,
-      }
+      },
     ],
     // 控制逗号在行尾出现还是在行首出现
     // http://eslint.org/docs/rules/comma-style
@@ -103,7 +92,7 @@ module.exports = {
       0,
       {
         allowKeywords: true,
-      }
+      },
     ],
     // 文件末尾强制换行
     'eol-last': 2,
@@ -122,7 +111,7 @@ module.exports = {
       {
         before: true,
         after: true,
-      }
+      },
     ],
     'guard-for-in': 0,
     'handle-callback-err': [2, '^(err|error)$ '],
@@ -131,14 +120,14 @@ module.exports = {
       2,
       {
         SwitchCase: 1,
-      }
+      },
     ],
     'key-spacing': [
       2,
       {
         beforeColon: false,
         afterColon: true,
-      }
+      },
     ],
     'linebreak-style': 0,
     'lines-around-comment': 0,
@@ -148,7 +137,7 @@ module.exports = {
       {
         newIsCap: true,
         capIsNew: false,
-      }
+      },
     ],
     'new-parens': 2,
     'newline-after-var': 0,
@@ -201,7 +190,7 @@ module.exports = {
       2,
       {
         max: 1,
-      }
+      },
     ],
     'no-native-reassign': 2,
     'no-negated-in-lhs': 2,
@@ -248,7 +237,7 @@ module.exports = {
       {
         vars: 'all',
         args: 'none',
-      }
+      },
     ],
     'no-use-before-define': 0,
     'no-var': 0,
@@ -261,7 +250,7 @@ module.exports = {
       2,
       {
         initialized: 'never',
-      }
+      },
     ],
     'operator-assignment': 0,
     'operator-linebreak': [
@@ -272,7 +261,7 @@ module.exports = {
           '?': 'before',
           ':': 'before',
         },
-      }
+      },
     ],
     'padded-blocks': 0,
     'prefer-const': 0,
@@ -294,21 +283,14 @@ module.exports = {
       {
         words: true,
         nonwords: false,
-      }
+      },
     ],
     'spaced-comment': [
       2,
       'always',
       {
-        markers: [
-          'global',
-          'globals',
-          'eslint',
-          'eslint-disable',
-          '*package',
-          '!'
-        ],
-      }
+        markers: ['global', 'globals', 'eslint', 'eslint-disable', '*package', '!'],
+      },
     ],
     strict: 0,
     'use-isnan': 2,
@@ -320,5 +302,6 @@ module.exports = {
     yoda: [2, 'never'],
     'standard/computed-property-even-spacing': 0,
     'global-require': 0,
+    'no-tabs': 0,
   },
 };

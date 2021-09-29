@@ -16,8 +16,8 @@ module.exports = {
         'refactor', // 代码重构
         'revert', // 代码回滚
         'style', // 代码风格（不影响代码运行的变动）
-        'test' // 测试用例
-      ]
+        'test', // 测试用例
+      ],
     ],
   },
 };

@@ -1,0 +1,6 @@
+/dist/*
+/public/*
+public/*
+*.js
+*.jpg
+*.woff

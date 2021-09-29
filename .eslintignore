@@ -1,2 +1,5 @@
 dist/*
 # commitlint.config.js
+public/*
+node_modules/*
+.vscode/
