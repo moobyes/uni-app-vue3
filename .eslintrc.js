@@ -1,10 +1,11 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
     es2021: true,
     node: true,
   },
-  extends: ['plugin:vue/essential', 'airbnb-base'],
+  extends: ['plugin:vue/vue3-recommended', 'plugin:vue/essential', 'airbnb-base'],
   settings: {
     'import/resolver': {
       node: {
@@ -20,6 +21,9 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['vue'],
+  globals: {
+    uni: true,
+  },
   rules: {
     'no-callback-literal': 0,
     'vue/no-parsing-error': [
@@ -303,5 +307,25 @@ module.exports = {
     'standard/computed-property-even-spacing': 0,
     'global-require': 0,
     'no-tabs': 0,
+    'vue/script-setup-uses-vars': 'error',
+    'vue/custom-event-name-casing': 'off',
+    'vue/html-self-closing': [
+      'error',
+      {
+        html: {
+          void: 'never',
+          normal: 'always',
+          component: 'always',
+        },
+        svg: 'always',
+        math: 'always',
+      },
+    ],
+    'vue/no-unused-vars': [
+      'error',
+      {
+        ignorePattern: '^_',
+      },
+    ],
   },
 };

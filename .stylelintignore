@@ -1,6 +1,13 @@
+!.stylelintrc.js
 /dist/*
 /public/*
 public/*
 *.js
 *.jpg
 *.woff
+# /src/uni.scss
+
+# 测试和打包目录
+/test/
+/node_modules/*
+!.stylelintrc.js

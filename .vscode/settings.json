@@ -3,22 +3,13 @@
   "files.associations": {
     "*.json": "jsonc"
   },
-  "vetur.format.defaultFormatterOptions": {
-    "prettyhtml": {
-      // 单行超过100个长度的时候开始换行
-      "printWidth": 100,
-      "tabWidth": 2,
-      "useTabs": false,
-      "singleQuote": true,
-      "wrapAttributes": true,
-      "sortAttributes": true
-    }
-  },
+  "eslint.validate": ["javascript", "javascriptreact", "html", "vue", "typescript"],
   // 禁用vetur的JS格式化，交给eslint处理
-  "vetur.format.defaultFormatter.js": "none",
+  // "vetur.format.defaultFormatter.js": "none",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll.stylelint": true
   }
-  // "editor.formatOnSave": true
+  // "editor.formatOnSave": true,
+  // "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
