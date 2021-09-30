@@ -13,9 +13,7 @@
       <text class="test">
         {{ title }}, {{ subTitle }}
       </text>
-      <text class="iconfont plus">
-        &#xe642;
-      </text>
+      <i class=".t-icon t-icon-diandan" />
       <view class="iconfont icon-jia icon" />
     </view>
   </view>
