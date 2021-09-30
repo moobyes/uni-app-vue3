@@ -1,19 +1,24 @@
 <template>
   <view class="content">
-    <view @click="testChangeTxt">改变值</view>
+    <uni-nav-bar left-icon="back" left-text="返回" right-text="菜单" title="导航栏组件" />
+    <view @click="testChangeTxt"> 改变值 </view>
     <view>
-      <text class="test">{{ title }}, {{ subTitle }}</text>
-      <text class="iconfont plus">&#xe642;</text>
-      <view class="iconfont icon-jia icon"></view>
+      <text class="test"> {{ title }}, {{ subTitle }} </text>
+      <text class="iconfont plus"> &#xe642; </text>
+      <view class="iconfont icon-jia icon" />
     </view>
   </view>
 </template>
 
 <script>
 import { ref, getCurrentInstance } from 'vue';
+import uniNavBar from '@/components/uni-nav-bar/uni-nav-bar.vue';
 import * as request from '@/utils/request';
 
 export default {
+  components: {
+    uniNavBar,
+  },
   setup() {
     const subTitle = ref('庆祝');
     const { proxy } = getCurrentInstance();
