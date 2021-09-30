@@ -18,8 +18,15 @@
           class="uni-navbar__header-btns uni-navbar__header-btns-left uni-navbar__content_view"
           @tap="onClickLeft"
         >
-          <view v-if="leftIcon.length" class="uni-navbar__content_view">
-            <uni-icons :color="color" :type="leftIcon" size="24" />
+          <view
+            v-if="leftIcon.length"
+            class="uni-navbar__content_view"
+          >
+            <uni-icons
+              :color="color"
+              :type="leftIcon"
+              size="24"
+            />
           </view>
           <view
             v-if="leftText.length"
@@ -32,12 +39,18 @@
           </view>
           <slot name="left" />
         </view>
-        <view class="uni-navbar__header-container uni-navbar__content_view" @tap="onClickTitle">
+        <view
+          class="uni-navbar__header-container uni-navbar__content_view"
+          @tap="onClickTitle"
+        >
           <view
             v-if="title.length"
             class="uni-navbar__header-container-inner uni-navbar__content_view"
           >
-            <text class="uni-nav-bar-text" :style="{ color: color }">
+            <text
+              class="uni-nav-bar-text"
+              :style="{ color: color }"
+            >
               {{ title }}
             </text>
           </view>
@@ -49,8 +62,15 @@
           class="uni-navbar__header-btns uni-navbar__content_view"
           @tap="onClickRight"
         >
-          <view v-if="rightIcon.length" class="uni-navbar__content_view">
-            <uni-icons :color="color" :type="rightIcon" size="24" />
+          <view
+            v-if="rightIcon.length"
+            class="uni-navbar__content_view"
+          >
+            <uni-icons
+              :color="color"
+              :type="rightIcon"
+              size="24"
+            />
           </view>
           <!-- 优先显示图标 -->
           <view
@@ -65,7 +85,10 @@
         </view>
       </view>
     </view>
-    <view v-if="fixed" class="uni-navbar__placeholder">
+    <view
+      v-if="fixed"
+      class="uni-navbar__placeholder"
+    >
       <status-bar v-if="statusBar" />
       <view class="uni-navbar__placeholder-view" />
     </view>

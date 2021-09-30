@@ -1,10 +1,21 @@
 <template>
   <view class="content">
-    <uni-nav-bar left-icon="back" left-text="返回" right-text="菜单" title="导航栏组件" />
-    <view @click="testChangeTxt"> 改变值 </view>
+    <uni-nav-bar
+      left-icon="back"
+      left-text="返回"
+      right-text="菜单"
+      title="导航栏组件"
+    />
+    <view @click="testChangeTxt">
+      改变值
+    </view>
     <view>
-      <text class="test"> {{ title }}, {{ subTitle }} </text>
-      <text class="iconfont plus"> &#xe642; </text>
+      <text class="test">
+        {{ title }}, {{ subTitle }}
+      </text>
+      <text class="iconfont plus">
+        &#xe642;
+      </text>
       <view class="iconfont icon-jia icon" />
     </view>
   </view>
